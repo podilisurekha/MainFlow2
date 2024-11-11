@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanical Engineering Topics</title>
+    <style>
+        /* General reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Main container styling */
+        .container {
+            width: 1200px;
+            margin: 20px auto;
+            padding: 150px;
+            border: 2px solid #000000;
+            border-radius: 50px;
+        }
+
+        /* Title styling */
+        .title {
+            text-align: center;
+            font-size: 3.5em;
+            margin-bottom: 50px;
+        }
+
+        /* Subject buttons styling */
+        .subjects {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 100px;
+            margin-bottom: 15px;
+        }
+
+        .subject-btn {
+            padding: 150px;
+            border: 1px solid #ff9900;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            background-color: #0000FF;
+            transition: background-color 0.3s ease;
+        }
+
+        .subject-btn:hover {
+            background-color: #dddddd;
+        }
+
+        /* Help/Contact link styling */
+        .help {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .help a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        /* Topic list styling */
+        .topic-list {
+            display: none;
+            border-top: 3px solid #333;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+
+        .topic-list h3 {
+            font-size: 2.1em;
+            margin-bottom: 10px;
+        }
+
+        .topic-list p {
+            margin-bottom: 5px;
+        }
+
+        .topic-list a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">about</a>
+        <a href="#">COURCE</a>
+        <a href="#">Contacct</a>
+    </div>
+
+<div class="container">
+    <!-- Main title -->
+    <div class="title">Mechanical Engineering</div>
+
+    <!-- Subject buttons -->
+    <div class="subjects">
+        <div class="subject-btn" onclick="showTopics('sub1')"> 1ST YEAR </div>
+        <div class="subject-btn" onclick="showTopics('sub2')"> 2ND YEAR </div>
+        <div class="subject-btn" onclick="showTopics('sub3')"> 3RD YEAR </div>
+        <div class="subject-btn" onclick="showTopics('sub4')"> 4TH YEAR</div>
+    </div>
+
+    <!-- Help/Contact link -->
+    <div class="help"><a href="#">Help/Contact</a></div>
+
+    <!-- Topic list sections for each subject -->
+    <div id="sub1" class="topic-list">
+        <h3> Sem 1</h3>
+        <p>Sub 1 - <a href="#">Link</a></p>
+        <p>Sub 2 - <a href="#">Link</a></p>
+        <p>Sub 3 - <a href="#">Link</a></p>
+        <p>Sub 4 - <a href="#">Link</a></p>
+        <p>Sub 5 - <a href="#">Link</a></p>
+        <p>Sub 6 - <a href="#">Link</a></p>
+        <h3> Sem 2</h3>
+        <p>Sub 1 - <a href="#">Link</a></p>
+        <p>Sub 2 - <a href="#">Link</a></p>
+        <p>Sub 3 - <a href="#">Link</a></p>
+        <p>Sub 4 - <a href="#">Link</a></p>
+        <p>Sub 5 - <a href="#">Link</a></p>
+        <p>Sub 6 - <a href="#">Link</a></p>
+    </div>
+   
+    <div id="sub2" class="topic-list">
+        <h3> Sem 3</h3>
+        <p>Sub 1 - <a href="#">Link</a></p>
+        <p>Sub 2 - <a href="#">Link</a></p>
+        <p>Sub 3 - <a href="#">Link</a></p>
+        <p>Sub 4 - <a href="#">Link</a></p>
+        <p>Sub 5 - <a href="#">Link</a></p>
+        <p>Sub 6 - <a href="#">Link</a></p>
+        <h3> Sem 4 </h3>
+        <p>Sub 1 - <a href="#">Link</a></p>
+        <p>Sub 2 - <a href="#">Link</a></p>
+        <p>Sub 3 - <a href="#">Link</a></p>
+        <p>Sub 4 - <a href="#">Link</a></p>
+        <p>Sub 5 - <a href="#">Link</a></p>
+        <p>Sub 6 - <a href="#">Link</a></p>
+        
+ 
+     </div>
+
+    <div id="sub3" class="topic-list">
+        <h3>Sem 5 </h3>
+        <p>Sub 1 - <a href="#">Link</a></p>
+        <p>Sub 2 - <a href="#">Link</a></p>
+        <p>Sub 3 - <a href="#">Link</a></p>
+        <p>Sub 4 - <a href="#">Link</a></p>
+        <p>Sub 5 - <a href="#">Link</a></p>
+        <p>Sub 6 - <a href="#">Link</a></p>
+        <p>Sub 7 - <a href="#">Link</a></p>
+        <h3>Sem 6 </h3>
+        <p>Sub 1 - <a href="#">Link</a></p>
+        <p>Sub 2 - <a href="#">Link</a></p>
+        <p>Sub 3 - <a href="#">Link</a></p>
+        <p>Sub 4 - <a href="#">Link</a></p>
+        <p>Sub 5 - <a href="#">Link</a></p>
+        <p>Sub 6 - <a href="#">Link</a></p>
+        <p>Sub 7 - <a href="#">Link</a></p>
+    </div>
+
+    <div id="sub4" class="topic-list">
+        <h3>Sem 7</h3>
+        <p>Sub 1 - <a href="#">Link</a></p>
+        <p>Sub 2 - <a href="#">Link</a></p>
+        <p>Sub 3 - <a href="#">Link</a></p>
+        <p>Sub 4 - <a href="#">Link</a></p>
+        <p>Sub 5 - <a href="#">Link</a></p>
+        <p>Sub 6 - <a href="#">Link</a></p>
+        <p>Sub 7 - <a href="#">Link</a></p>
+        <h3> Final Project</h3>
+        
+    </div>
+</div>
+
+<script>
+    // Function to display topics based on subject clicked
+    function showTopics(subjectId) {
+        // Hide all topic lists
+        const topics = document.querySelectorAll('.topic-list');
+        topics.forEach(topic => topic.style.display = 'none');
+
+        // Show the selected topic list
+        const selectedTopic = document.getElementById(subjectId);
+        if (selectedTopic) {
+            selectedTopic.style.display = 'block';
+        }
+    }
+</script>
+
+</body>
+</html>
